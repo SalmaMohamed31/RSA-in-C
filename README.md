@@ -56,15 +56,16 @@ MAX_32_BIT: This macro defines the maximum value that can be represented by a 32
 MAX_64_BIT: Similarly, this macro defines the maximum value that can be represented by a 64-bit unsigned integer (uint64_t). Its value is set to 18446744073709551615UL, which is 264−1264−1, the maximum value for a 64-bit unsigned integer.
 
 
-******** image 2
+![Picture2](https://github.com/SalmaMohamed31/RSA-in-C/assets/121355154/aea46923-0c87-4b32-9923-981ab4c0b7c8)
 
 is_prime() function to check whether p and q prime or not.
 
-******** image 3
+
+![Picture3](https://github.com/SalmaMohamed31/RSA-in-C/assets/121355154/602c1120-44bd-441d-a3de-4b0b189da13b)
 
 mod_exp() function implements modular exponentiation using the square-and-multiply algorithm, commonly known as the square multiply algorithm, which is a fundamental operation in cryptography, especially in RSA encryption and decryption.
 
-**** image 4
+![Picture4](https://github.com/SalmaMohamed31/RSA-in-C/assets/121355154/d9e51f53-6fb2-491f-a9b3-d54c49c426a3)
 
 Here's how it works:
 
@@ -77,23 +78,22 @@ Here's how it works:
 This algorithm efficiently calculates modular exponentiation with a complexity of O(log b), where b is the exponent. It is widely used in cryptographic operations due to its efficiency and simplicity.
 
 
-*** image 5
+![Picture5](https://github.com/SalmaMohamed31/RSA-in-C/assets/121355154/f16d1b5d-fc66-4f49-ac5e-1872fbf85a82)
 
 
 Encrypt() function from its name, this function will be invoked when all prerequisites are done and its time for encryption.
 
 
-**** image 6
+![Picture6](https://github.com/SalmaMohamed31/RSA-in-C/assets/121355154/67c22ebf-7b7f-4b16-8f08-f3526a5ca1c2)
 
 is_integer() function examines each character in the input string to verify that it consists entirely of digits, optionally preceded by a sign character. If the string meets these criteria, the function concludes that it represents an integer and returns true; otherwise, it returns false.
 
-
-*** image 7
+![Picture7](https://github.com/SalmaMohamed31/RSA-in-C/assets/121355154/9010388e-7f85-4279-b0ae-f58a0f9f1c23)
 
 These two functions, map_to_integer() and map_to_text(), are used for mapping two-letter combinations to unique integer values and vice versa. They facilitate the conversion between textual representations and their corresponding numerical representations.
 
 
-**** image 8
+![Picture8](https://github.com/SalmaMohamed31/RSA-in-C/assets/121355154/d48fcaaa-0ddb-4aea-a428-aee5663d50c7)
 
 The first part of the main() function we check several things:
 1.	P and q are prime.
@@ -102,14 +102,12 @@ The first part of the main() function we check several things:
 4.	n is smaller than 64 bits
 
 
-**** image 9
+![Picture9](https://github.com/SalmaMohamed31/RSA-in-C/assets/121355154/acb3d247-f8dc-4ab0-9016-4aa4c00ba01e)
 
 The second part of the main() function, calculating phi and making sure from the public key a≡b−1(mod ϕ(n)), by ba mod n =1
 Checking if the plaintext greater than 20 characters (equivalent to 64 bits) and to make sure n is smaller than 64 bits then if it is a string it must be divided to blocks to make sure that the plaintext won’t exceed 64 bits.
 
-
-*** image 10
-
+![Picture10](https://github.com/SalmaMohamed31/RSA-in-C/assets/121355154/6cbd5b11-5be8-44bc-abc2-817ae1c5ef86)
 
 Finally, the last part in the main we open a file to output the ciphertext computed.
 
@@ -120,7 +118,7 @@ Finally, the last part in the main we open a file to output the ciphertext compu
 RSA encryption is a fundamental cryptographic algorithm that provides secure communication over insecure channels. By leveraging the principles of number theory and modular arithmetic, RSA encryption ensures confidentiality and integrity in data transmission. This documentation serves as a comprehensive guide to understanding and implementing RSA encryption in the C programming language.
 
 
-## Refrences
+## References
 -	https://toc.cryptobook.us/
 -	https://pd.daffodilvarsity.edu.bd/course/material/book-430/pdf_content
 -	https://link.springer.com/book/10.1007/978-3-642-04101-3
